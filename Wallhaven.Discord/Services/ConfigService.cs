@@ -30,7 +30,7 @@ namespace Wallhaven.Discord.Services
                 .SetBasePath(WallhavenAssembly.GetPath())
                 .SetFileLoadExceptionHandler((ex) =>
                 {
-                    Logger.Warning($"Failed to load config file {ex.Provider.Source.Path}");
+                    Logger.Warning($"Failed to load config file {WallhavenAssembly.GetPath(ex.Provider.Source.Path)}");
                     Logger.CriticalError(ex.Exception);
                 })
                 .AddInMemoryCollection(new Dictionary<string, string>())
