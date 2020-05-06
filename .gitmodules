@@ -1,0 +1,3 @@
+[submodule "Wallhaven.API"]
+	path = Wallhaven.API
+	url = https://github.com/Venipa/Wallhaven.API
