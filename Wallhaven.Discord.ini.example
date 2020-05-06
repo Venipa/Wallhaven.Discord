@@ -1,0 +1,7 @@
+[authentication]
+token=
+type=bot
+[bot]
+prefix=w!
+[wallhaven]
+token=
